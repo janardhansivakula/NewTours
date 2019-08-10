@@ -1,0 +1,13 @@
+package com.ForloopDemo;
+
+public class EvenNum_1To100 
+{
+   public static void main(String[] args) 
+	{
+	   for(int en=2;en<=100;en=en+2) 
+	   {
+		   System.out.println("Even Numbers frm 1 to 100 is:"+en);
+	   }
+	}
+
+}

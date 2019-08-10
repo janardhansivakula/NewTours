@@ -1,0 +1,14 @@
+package com.ForloopDemo;
+
+public class ForLoopDemo_Table 
+{
+   public static void main(String[] args) 
+	{
+       int tabNum=2;
+       
+       for(; ;)
+       {
+    	   
+       }
+	}
+}

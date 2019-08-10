@@ -1,0 +1,33 @@
+package com.IfElseDemo;
+
+public class IfElseProg_SmallestThree_Num 
+{
+	public static void main(String[]args)
+	{
+		int a=10;
+		int b=20;
+		int c=30;
+		int d=40;
+		int e=50;
+		int f=60;
+		  
+		int firstSmallestThreeNum=a=b=c;
+		
+		if(firstSmallestThreeNum<d)
+		{
+			System.out.println("The smallest Three numbers is:"+firstSmallestThreeNum);
+		}
+		else if(firstSmallestThreeNum<e)
+		{
+			System.out.println("The Smallest Three Numbers:"+firstSmallestThreeNum);
+		}
+		else if(firstSmallestThreeNum<e)
+		{
+			System.out.println("The Smallest Three Numbers:"+firstSmallestThreeNum);
+		}
+		else
+		{
+			System.out.println("no Smallest three Numbers");
+		}
+	}
+}

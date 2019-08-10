@@ -1,0 +1,5 @@
+feature:OrangeHRM Application Testing
+Scenario:OrangeHRM Application Login Functionality Testing
+Given:Openchrme browser and navigate to OrangeHRM Application
+When:User enters UserName and password and click on login button
+Then:User should be able to login and close the Application 

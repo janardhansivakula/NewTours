@@ -1,0 +1,43 @@
+package com.IfElseDemo;
+
+public class IfElseProg_SmallestThree_Num 
+{
+	
+	
+	public static void main(String[]args)
+	{
+		 int big=100;
+		
+		 int small1=11;
+		if(small1<big)
+		{
+			System.out.println("The First Small Num is:"+small1);
+		}
+		else
+		{
+			System.out.println("It's Not a Smallest Number Than First Small Num"); 
+			
+		}
+		
+		int small2=12;
+		if(small2<big)
+		{
+			System.out.println("The First Small Num is:"+small2);
+		}
+		else
+		{
+			System.out.println("It's Not a Smallest Number Than Second Small Num"); 
+			
+		}
+		int small3=13;
+		if(small3<big)
+		{
+			System.out.println("The First Small Num is:"+small3);
+		}
+		else
+		{
+			System.out.println("It's Not a Smallest Number Than First Small Num"); 
+			
+		}
+	}
+}

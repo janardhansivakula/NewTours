@@ -1,0 +1,23 @@
+package com.Write.Read.ExcelSheetOp;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+
+public class Write_Read_ExceSheet_Operation 
+{
+	WebDriver driver=null;
+
+	@BeforeTest
+	public void setBrowser()
+	{
+		System.setProperty("webdriver.chrome.driver", "./DriverFiles/chromedriver.exe");
+		driver=new ChromeDriver();
+	}
+	@AfterTest
+	public void TerminateBrowser()
+	{
+		driver.quit();
+	}
+}

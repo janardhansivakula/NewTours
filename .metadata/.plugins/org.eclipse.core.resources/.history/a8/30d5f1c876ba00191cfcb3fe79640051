@@ -1,0 +1,30 @@
+package com.IfElseDemo;
+
+public class IfElseDemo_BiggestNum 
+{
+
+	public static void main(String []args)
+	{
+		int a=50;
+		int b=35;
+		int c=70;
+		int d=25;
+
+		int biggestNum=d;//First Assume a is Biggest and a is assigned with biggestNum
+
+		if(biggestNum>b)
+		{
+			biggestNum=d;
+		}
+		else if(biggestNum>c)
+		{
+			biggestNum=d;
+		}
+        else if(biggestNum>a)
+		{
+			biggestNum=d;
+		}
+		System.out.println("The Biggest Number Of Four Numbers:"+biggestNum);
+		
+	}
+}

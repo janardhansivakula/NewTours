@@ -1,0 +1,76 @@
+package com.Write.Read.ExcelSheetOp;
+
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.testng.annotations.Test;
+
+public class Write_Read_ExceSheet_Operation 
+{
+	@Test
+	public void ExcelWriteRead() throws IOException
+	{
+		FileInputStream fis= new FileInputStream("./src/com/ExcelSheet/ORHRM.xlsx");
+		XSSFWorkbook workBook=new XSSFWorkbook(fis);
+		XSSFSheet sheet = workBook.getSheet("Sheet3");
+
+		Row row0=sheet.createRow(0);
+		Cell cell0=row0.createCell(0);
+		cell0.setCellValue("Hundred");
+		Cell cell1=row0.createCell(1);
+		cell1.setCellValue("Two Hundred");
+		Cell cell2=row0.createCell(2);
+		cell2.setCellValue("Three Hundred");
+		Cell cell3=row0.createCell(3);
+		cell3.setCellValue("Four Hundred");
+		Cell cell4=row0.createCell(4);
+		cell4.setCellValue("Five Hundred");
+		Cell cell5=row0.createCell(5);
+		cell5.setCellValue("Seven Hundred");
+		Cell cell6=row0.createCell(6);
+		cell6.setCellValue("Seven Hundred");
+		Cell cell7=row0.createCell(7);
+		cell7.setCellValue("Eight Hundred");
+		Cell cell8=row0.createCell(8);
+		cell8.setCellValue("Nine Hundred");
+		Cell cell9=row0.createCell(9);
+		cell9.setCellValue("Thousand");
+		
+		//vishnu
+		
+		Row row1=sheet.createRow(1);
+		Cell cell=row1.createCell(0);
+		cell.setCellValue("Hundred");
+		
+		
+
+		
+		
+	 int rowCount=sheet.getLastRowNum();
+	 System.out.println("The Total No Of Active Rows:"+rowCount);
+	 for(int r=0; r<rowCount; r++)
+	 {
+		     Row row=sheet.getRow(r);
+		     int cellCount=row.getLastCellNum();
+		    for(int c=0; c<cellCount; c++)
+		    {
+                 Cell cell123=row.getCell(c);
+                 String  excelData=cell123.getStringCellValue();
+                 System.out.print(excelData+" ");
+		    }
+		    System.out.println();
+	 }
+	 
+
+
+		FileOutputStream fos = new FileOutputStream("./src/com/ExcelSheet/ORHRM.xlsx");
+		workBook.write(fos);
+
+
+	}
+}

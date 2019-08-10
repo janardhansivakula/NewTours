@@ -1,0 +1,24 @@
+package com.IfElseDemo;
+
+public class IfElseProg_SmallestThree_Num 
+{
+	public static void main(String[]args)
+	{
+		int a=10;//third Least
+		int b=8;//second least
+		int c=6;//First least
+		
+		
+		int small=a;
+		if(small>b)
+			small=b;
+		else if(small>c)
+			small=c;
+		
+		System.out.println("First Least SmallNum:"+small);
+		
+		
+			
+        
+	}
+}
